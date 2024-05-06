@@ -1,0 +1,61 @@
+Example 1: Program to add two integer numbers
+
+#include <stdio.h>
+int main() {
+
+  int num1, num2, sum;
+
+  printf("Enter two integers: ");
+  //Storing user input into variable num1 & num2
+  scanf("%d %d", &num1, &num2);
+
+  // Adding two input numbers
+  sum = num1 + num2;
+
+  printf("Sum of %d and %d is: %d", num1, num2, sum);
+  return 0;
+}
+
+Output:
+ User enters the numbers 25 and 35 and the program prints the sum of these two numbers 60 as an output.
+
+
+Example2: Creating a user defined function addition()
+
+#include <stdio.h>
+int addition(int num1, int num2)
+{
+     int sum;
+     /* Arguments are used here*/
+     sum = num1+num2;
+
+     /* Function return type is integer so we are returning
+      * an integer value, the sum of the passed numbers.
+      */
+     return sum;
+}
+
+int main()
+{
+     int var1, var2;
+     printf("Enter number 1: ");
+     scanf("%d",&var1);
+     printf("Enter number 2: ");
+     scanf("%d",&var2);
+
+     /* Calling the function here, the function return type
+      * is integer so we need an integer variable to hold the
+      * returned value of this function.
+      */
+     int res = addition(var1, var2);
+     printf ("Output: %d", res);
+
+     return 0;
+}
+
+Output:
+
+Enter number 1: 100
+Enter number 2: 120
+Output: 220
+
